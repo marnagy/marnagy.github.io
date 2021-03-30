@@ -16,7 +16,7 @@ const app = Vue.createApp({
 
             //console.log(person)
             this.firstName = person.name.first
-            this.lastName = person.name.first
+            this.lastName = person.name.last
             this.email = person.email
             this.gender = person.gender
             this.picture = person.picture.large
