@@ -14,7 +14,7 @@ const app = Vue.createApp({
             const { results } = await res.json()
             const person = results[0]
 
-            console.log(person)
+            //console.log(person)
             this.firstName = person.name.first
             this.lastName = person.name.first
             this.email = person.email

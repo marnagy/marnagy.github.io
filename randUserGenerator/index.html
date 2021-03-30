@@ -8,14 +8,14 @@
     <body>
         <div id="app">
             <img v-bind:src="picture"
-                :alt="`${firstName} ${lastName}`"
-                :class="gender">
+            :alt="`${firstName} ${lastName}`"
+            :class="gender">
             <h1>{{firstName}} {{lastName}}</h1>
             <h3>Email: {{email}} </h3>
             <button :class="gender"
-                v-on:click="getUser()">Get Random User</button>
+            v-on:click="getUser()">Get Random User</button>
         </div>
-
+        
         <script src="vue.js"></script>
         <script src="app.js"></script>
     </body>
