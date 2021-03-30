@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vue.js Tutorial</title>
+        <link href="styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="app">
+            <img v-bind:src="picture"
+                :alt="`${firstName} ${lastName}`"
+                :class="gender">
+            <h1>{{firstName}} {{lastName}}</h1>
+            <h3>Email: {{email}} </h3>
+            <button :class="gender"
+                v-on:click="getUser()">Get Random User</button>
+        </div>
+
+        <script src="vue.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
