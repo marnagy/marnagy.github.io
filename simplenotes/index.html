@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Notes App</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://unpkg.com/vue@3.0.5/dist/vue.global.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- <button onclick="login()">Login Page</button>
+                <button onclick="register()">Register Page</button> -->
+            <h1>{{ title }}</h1>
+            <!-- <form method="POST" action="https://simplenotes-app.herokuapp.com/login"> -->
+                <h3>Username</h3>
+                <input name="username" type="text" v-model="username">
+                <h3>Password</h3>
+                <input name="password" type="password" v-model="password">
+                <br>
+                <!-- <input type="submit" value="Login"> -->
+                <button v-on:click="register()">Register</button>
+                <button v-on:click="login()">Login</button>
+                <br>
+                <button v-on:click="check_login()">Check Login</button>
+            <!-- </form> -->
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
