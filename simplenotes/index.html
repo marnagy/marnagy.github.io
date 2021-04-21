@@ -9,21 +9,18 @@
     </head>
     <body>
         <div id="app">
-            <!-- <button onclick="login()">Login Page</button>
-                <button onclick="register()">Register Page</button> -->
             <h1>{{ title }}</h1>
-            <!-- <form method="POST" action="https://simplenotes-app.herokuapp.com/login"> -->
-                <h3>Username</h3>
-                <input name="username" type="text" v-model="username">
-                <h3>Password</h3>
-                <input name="password" type="password" v-model="password">
-                <br>
-                <!-- <input type="submit" value="Login"> -->
-                <button v-on:click="register()">Register</button>
-                <button v-on:click="login()">Login</button>
-                <br>
-                <button v-on:click="check_login()">Check Login</button>
-            <!-- </form> -->
+                <div id="login_form">
+                    <h3>Username</h3>
+                    <input name="username" type="text" v-model="username">
+                    <h3>Password</h3>
+                    <input name="password" type="password" v-model="password">
+                    <br>
+                    <button v-on:click="register()">Register</button>
+                    <button v-on:click="login()">Login</button>
+                    <br>
+                    <button v-on:click="check_login()">Check Login</button>
+                </div>
         </div>
 
         <script src="./script.js"></script>
