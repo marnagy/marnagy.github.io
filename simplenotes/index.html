@@ -9,18 +9,28 @@
     </head>
     <body>
         <div id="app">
-            <h1>{{ title }}</h1>
-                <div id="login_form">
-                    <h3>Username</h3>
-                    <input name="username" type="text" v-model="username">
-                    <h3>Password</h3>
-                    <input name="password" type="password" v-model="password">
-                    <br>
-                    <button v-on:click="register()">Register</button>
-                    <button v-on:click="login()">Login</button>
-                    <br>
-                    <button v-on:click="check_login()">Check Login</button>
-                </div>
+            <div id="title_div">
+                <h1 id="title">{{ title }}</h1>
+            </div>
+            <!-- <button v-on:click="check_login()">Check Login</button> -->
+            <div id="login_form">
+                <h2>Username</h3>
+                <input name="username" type="text"
+                    v-model="username" placeholder="Username">
+                <h2>Password</h3>
+                <input name="password" type="password"
+                    v-model="password" placeholder="Password">
+                <br>
+                <button v-on:click="register()">Register</button>
+                <button v-on:click="login()">Login</button>
+                <br>
+            </div>
+
+            <div class="loader"></div>
+
+            <div id="notes_div">
+
+            </div>
         </div>
 
         <script src="./script.js"></script>

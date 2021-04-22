@@ -1,5 +1,54 @@
-#app {
+.note_div {
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: rgb(114, 36, 153);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: xx-large;
+}
+
+h2, input, button {
+    font-size: x-large;
+    size: inherit;
+}
+
+input {
+    min-width: 50px;
+    max-width: 200px;
+    width: 100%;
+}
+
+#login_form {
+    background-color: darkolivegreen;
     text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 0px 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
     vertical-align: middle;
 }
 
+input {
+    text-align: center;
+}
+
+#title_div {
+    display: block;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+#app {
+    margin: 0px;
+    /* text-align: center; */
+}
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
